@@ -16,4 +16,6 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
-CMD [ "node", "app.js" ]
+EXPOSE 3001
+EXPOSE 80
+CMD [ "node", "api.js" ]
