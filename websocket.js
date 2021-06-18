@@ -1,6 +1,6 @@
 let io = undefined
-const status_change = (id, value)=>{
-    io.emit('message', {type: 'update-room', id: id, value: value});
+const status_change = (id, count)=>{
+    io.emit('message', {type: 'update-room', id: id, count: count});
 }
 const init = (app, http)=>{
     io = require('socket.io')(http);
