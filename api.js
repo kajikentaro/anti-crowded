@@ -1,3 +1,4 @@
+let websocket = require('./websocket')
 class Room{
   constructor(id, name, count = 0, green_max = 3, yellow_max = 5){
     this.id = id
@@ -45,9 +46,11 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 let test = 'no init'
 function updateRoom(body, res){
-  if(!body.id)wrongRes("didn't have id")
-  if(!body.value)wrongRes("didn't have value")
-  rooms[body.id].value += parseInt(body.value)
+  if(!body.id)wrongRes(res, "didn't have id")
+  if(!body.value)wrongRes(res, "didn't have value")
+  if(!rooms[body.id])wrongRes(res, "room id " + body.id + " was not found")
+  rooms[body.id].count += parseInt(body.value)
+  websocket.status_change(body.id, rooms[body.id].count)
   collectRes(res)
 }
 function getRooms(body, res){
@@ -55,7 +58,9 @@ function getRooms(body, res){
 }
 function createRoom(body, res){
   if(!body.name)wrongRes(res, "didn't have name")
-  new_id = Math.floor(Math.random() * 10000)
+  if(!body.id)wrongRes(res, "didn't have id")
+  //new_id = Math.floor(Math.random() * 10000)
+  new_id = parseInt(body.id)
   rooms[new_id] = new Room(new_id, body.name)
   collectRes(res)
 }
