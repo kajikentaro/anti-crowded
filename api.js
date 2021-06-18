@@ -31,7 +31,11 @@ const init = (app) => {
     collectRes(res)
   }
   function getRooms(body, res){
-    res.send(rooms)
+    let ans = []
+    for(let r in rooms){
+      ans.push(rooms[r])
+    }
+    res.send(ans)
   }
   function createRoom(body, res){
     if(!body.name)wrongRes(res, "didn't have name")
