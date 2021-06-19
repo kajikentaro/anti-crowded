@@ -8,21 +8,26 @@ h1{
     color: rosybrown;
 }
 .people{
+   padding-left: 400px;
     padding-top: 50px;
-    padding-left: 100px;
     font-size: 50px;
 }
 .jam{
+    padding-left: 400px;
     padding-top: 50px;
-    padding-left: 100px;
     font-size: 50px;
 }
 .color{
+    padding-left: 400px;
     font-size: 30px;
-    padding-left: 100px;
+    padding-left: 500px;
+}
+.des{
+    padding-left: 400px;
+    font-size: 30px;
 }
 .co2{
     padding-top: 200px;
-    padding-left: 100px;
+    padding-left: 400px;
     font-size: 50px;
 }
