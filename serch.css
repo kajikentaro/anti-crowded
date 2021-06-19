@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+       height: 240px;
+       font-size: 100px;
+   }
+.top{
+    background-image: url(img1/IMG_background.jpeg);
+    opacity: 0.5;
+
+}
+.name{
+    font-size: 80px;
+    text-align: center;
+    padding-top: 50px;
+    font-style: arial;
+}
+.floor{
+    padding-top: 80px;
+    padding-left: 380px;
+    margin: 0 auto;
+    height: 900px;
+    width: 1000px;
+}
+
+

@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+color: white;
+ font-size: 100px; 
+    font-family: georgia;
+    text-align: center;
+        padding: 110px;
+}

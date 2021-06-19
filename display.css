@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 100px;
+    text-align: center;
+    color: rosybrown;
+}
+.people{
+    padding-top: 50px;
+    padding-left: 100px;
+    font-size: 50px;
+}
+.jam{
+    padding-top: 50px;
+    padding-left: 100px;
+    font-size: 50px;
+}
+.color{
+    font-size: 30px;
+    padding-left: 100px;
+}
+.co2{
+    padding-top: 200px;
+    padding-left: 100px;
+    font-size: 50px;
+}
