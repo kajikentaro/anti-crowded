@@ -1,0 +1,29 @@
+<svg width="1280" height="720" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="hidden"><defs><clipPath id="clip0"><rect x="0" y="0" width="1280" height="720"/></clipPath></defs><g clip-path="url(#clip0)">
+<rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<rect x="128.5" y="197.5" width="209" height="49" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="16" transform="translate(184.48 227)">エントランス</text>
+<rect x="909.5" y="295.5" width="198" height="71" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(988.383 324)">WC<tspan font-size="24" x="-50" y="29">(</tspan><tspan font-size="24" x="-40.6667" y="29">男子・女子</tspan><tspan font-size="24" x="79.3334" y="29">)</tspan></text>
+<rect x="173.5" y="409.5" width="132" height="63" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(212.646 448)">3101</text>
+<rect x="173.5" y="472.5" width="132" height="58" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(212.646 508)">3102</text>
+<rect id="3103" x="305.5" y="366.5" width="518" height="164" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(537.609 441)">3103<tspan font-size="24" x="-21.3333" y="29">学生食堂</tspan></text>
+<rect x="823.5" y="366.5" width="285" height="164" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(938.697 441)">3104<tspan font-size="24" x="-9.33337" y="29">厨房</tspan>室</text>
+<rect x="823.5" y="39.5001" width="284" height="207" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(845.035 150)">理工キャリアセンター</text>
+<rect x="1108.5" y="366.5" width="72" height="164" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(1131.95 441)">階<tspan font-size="24" x="0" y="29">段</tspan></text>
+<rect x="786.5" y="295.5" width="50" height="71" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(795.75 338)">EV</text>
+<rect x="22.5001" y="246.5" width="106" height="131" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(59.9683 306)">EV<tspan font-size="21" x="-16.8333" y="26">ホール</tspan></text>
+<rect x="83.5001" y="377.5" width="90" height="153" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="21" transform="translate(107.023 448)">階段</text>
+<rect id="3105" x="337.5" y="39.5001" width="403" height="207" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="24" transform="translate(511.733 150)">3105</text>
+<path d="M1108.5 246.5 1108.5 295.569" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/>
+<rect x="740.5" y="197.5" width="83" height="50" stroke="#000000" stroke-width="1.33333" stroke-miterlimit="8" fill="none"/>
+<text font-family="Yu Gothic,Yu Gothic_MSFontService,sans-serif" font-weight="400" font-size="16" transform="translate(757.671 228)">出入口</text></g></svg>
