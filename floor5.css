@@ -1,0 +1,123 @@
+.top{
+    position: relative;
+}
+.top h1{
+    position: absolute;
+    font-size: 130px;
+    color: black;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    width : 100vw;
+}
+.top img{
+    width: 100%;
+    opacity: 0.7;
+}
+.p1{
+    font-size: 30px;
+    text-align: center;
+    font-style: arial;
+    color: black;
+    background-color: blanchedalmond;
+
+}
+.p2{
+    font-size: 30px;
+    text-align: center;
+    font-style: arial;
+    color: black;
+    background-color: blanchedalmond;
+}
+.p3{
+    font-size: 30px;
+    text-align: center;
+    font-style: arial;
+    color: black;
+    background-color: blanchedalmond;
+}
+.p4{
+    font-size: 30px;
+    text-align: center;
+    font-style: arial;
+    color: black;
+    background-color: blanchedalmond;
+}
+.p5{
+    font-size: 30px;
+    text-align: center;
+    font-style: arial;
+    color: black;
+    background-color: blanchedalmond;
+}
+.p6{
+    font-size: 30px;
+    text-align: center;
+    font-style: arial;
+    color: black;
+    background-color: blanchedalmond;
+}
+.Guide1{
+    font-size: 20px;
+    font-style: arial;
+    color: black;
+    background-color: white;
+}
+.Guide1 span{
+    font-size: 30px;
+    font-style: arial;
+    color:white;
+    background-color: red;
+}
+.Guide2{
+    font-size: 20px;
+    font-style: arial;
+    color: black;
+    background-color: white;
+}
+.Guide2 span{
+    font-size: 30px;
+    font-style: arial;
+    color:white;
+    background-color: yellow;
+    text-shadow:1px 1px 1px black; 
+    /*textshadow:X軸方向のオフセット Y軸方向のオフセット ぼかしの半径 色;*/
+}
+.Guide3{
+    font-size: 20px;
+    font-style: arial;
+    color: black;
+    background-color: white;
+}
+.Guide3 span{
+    font-size: 30px;
+    font-style: arial;
+    color:white;
+    background-color: blue;
+}
+.home{
+    font-size: 20px;
+    text-align: right;
+    font-style: arial;
+    color: black;
+}
+.svg51{
+    text-align: center;
+}
+.svg52{
+    text-align: center;
+}
+.svg53{
+    text-align: center;
+}
+.svg54{
+    text-align: center;
+}
+.svg55{
+    text-align: center;
+}
