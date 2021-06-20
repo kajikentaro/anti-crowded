@@ -1,3 +1,4 @@
+const path = require('path')
 let websocket = require('./websocket')
 let api = require('./api')
 
@@ -13,9 +14,9 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 
+app.use(express.static(path.join(__dirname, "../homepage")))
 api.init(app)
 websocket.init(app, http)
-
 
 let port = 3000
 http.listen(port, () => console.log(`listening on port ${port}!`))

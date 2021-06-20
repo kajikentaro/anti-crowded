@@ -1,3 +1,4 @@
+let room = require('./Room')
 const default_rooms = [
 {type:"create-room", "id":3103, "name":"hello", "green_max":30, "yellow_max":60, "count":0},
 {type:"create-room", "id":"career", "name":"hello", "green_max":10, "yellow_max":30, "count":0},
@@ -87,3 +88,10 @@ const default_rooms = [
 
 {type:"create-room", "id":6500, "name":"hello", "green_max":30, "yellow_max":60, "count":0},
 ]
+exports.init = ()=>{
+	let rooms = {}
+	for(let i of default_rooms){	
+		rooms[i.id] = new room.Room(i.id, i.name, i.count, i.green_max, i.yellow_max)
+	}
+	return rooms
+}

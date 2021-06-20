@@ -1,7 +1,8 @@
 let room = require('./Room')
 let websocket = require('./websocket')
+let init_json = require('./init_json')
 const init = (app) => {
-  rooms = {}
+  let rooms = init_json.init()
   app.post('/api/', (req, res) => {
     let body = req.body;
     switch(body.type){
@@ -27,7 +28,7 @@ const init = (app) => {
     if(!body.value)wrongRes(res, "didn't have value")
     if(!rooms[body.id])wrongRes(res, "room id " + body.id + " was not found")
     rooms[body.id].count += parseInt(body.value)
-    websocket.status_change(body.id, rooms[body.id].count)
+    websocket.status_change(rooms[body.id])
     collectRes(res)
   }
   function getRooms(body, res){
