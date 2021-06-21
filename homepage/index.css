@@ -3,13 +3,16 @@
     padding: 0;
 }
 h1{
+    background-color: white;
     text-align: center;
        height: 240px;
        font-size: 100px;
+       opacity: 0.5;
+       padding-top: 50px;
    }
 .top{
     background-image: url(img1/IMG_background.jpeg);
-    opacity: 0.5;
+
 
 }
 .name{
@@ -25,5 +28,3 @@ h1{
     height: 900px;
     width: 1000px;
 }
-
-
