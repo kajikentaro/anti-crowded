@@ -20,6 +20,11 @@ app.use(express.static(path.join(__dirname, "../homepage")))
 app.get('/display/display.css', (req, res) => {
     res.sendFile(path.join(__dirname,'../display/display.css'));
 });
+app.get('/vacant', function (req, res) {
+    let rooms = api.getRooms({})
+    rooms.sort((a,b) => a.count - b.count)
+    res.render(path.join(__dirname, "../homepage/vacant.ejs"), {rooms:rooms})
+});
 app.get('/display/:id', function (req, res) {
     let room = api.getRoom({id: req.params.id})
     let color = "#ffffff"

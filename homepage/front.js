@@ -25,6 +25,7 @@ const init_crowded = async ()=>{
     for (let i = 0; i < res.length; i++) {
         for (let j = 0; j < rects.length; j++) {
             if (res[i].id == rects[j].id) {
+                rects[j].onclick = function(){return () => {window.location = "./display/" + res[i].id}}()
                 if(res[i].count > res[i].yellow_max){
                     //赤にする
                     change_color(res[i].id, "#ffcdcd")

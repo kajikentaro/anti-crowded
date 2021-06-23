@@ -59,3 +59,4 @@ function createRoom(body) {
 }
 exports.init = init
 exports.getRoom = getRoom
+exports.getRooms = getRooms

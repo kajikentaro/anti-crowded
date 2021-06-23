@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>chuo serch</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<div class="top">
+				<h1>空き教室一覧</h1>
+			</div>
+			<div style="margin:0px;padding:0px;" align="center"><table width="98%" style="border-collapse: collapse;border:1px solid #000000;background-color:#FFFFFF;color:#000000;text-align:left;"><tbody>
+				<tr><th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">ID</th><th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">人数</th><th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">&nbsp;</th>
+
+				<% for (var i=0; i < rooms.length; i++) { %>
+				<tr><td style="border:1px solid #000000;text-align:left;"><a href=<%= "./display/" + rooms[i].id %>><%- rooms[i].id %></a></td><td style="border:1px solid #000000;text-align:left;"><%- rooms[i].count %></td>
+				<% } %>
+
+				</tbody></table></div>
+		</div>
+
+	</header>
+	</div>
+</body>
+
+</html>
