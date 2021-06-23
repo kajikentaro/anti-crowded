@@ -43,6 +43,7 @@ const init_crowded = async ()=>{
 }
 const init_websocket = ()=>{
     var socketio = io();
+    socketio.emit('add:client', {});
     socketio.on('message', function (msg) {
         let data = msg
         if(data.count > data.yellow_max){

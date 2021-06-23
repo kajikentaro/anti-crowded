@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>chuo serch</title>
     <link rel="stylesheet" href="display.css">
-    <meta http-equiv="refresh" content="30;">
+    <script src="/socket.io/socket.io.js"></script>
 </head>
 
 <body>
@@ -14,8 +14,8 @@
     <header>
         <div>
             <h1><%- id %></h1>
-            <p class="people">人数: <%- count %><br></p>
-            <div class="test" style=<%= "background-color:" + color %>></div>
+            <p class="people" id="people">人数: <%- count %><br></p>
+            <div class="test" id="canvas" style=<%= "background-color:" + color %>></div>
             <p class="jam">混雑状況</p>
 
             <p class="color">
@@ -32,3 +32,25 @@
 </body>
 
 </html>
+<script>
+let socketio = io();
+let canvas = document.getElementById('canvas');
+let people = document.getElementById('people');
+socketio.on('message', function (msg) {
+    let data = msg
+    people.innerHTML = "人数: " + data.count + "<br>"
+    if(data.count > data.yellow_max){
+        //赤にする
+        canvas.style.backgroundColor = "#ffcdcd";
+    }
+    else if(data.count > data.green_max){
+        //黄色にする
+        canvas.style.backgroundColor = "#fcffcd";
+    }
+    else{
+        //青にする
+        canvas.style.backgroundColor = "#cdd8ff";
+    }
+});
+socketio.emit('add:display', {id: <%- id %>});
+</script>
