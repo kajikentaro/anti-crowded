@@ -21,7 +21,7 @@ app.get('/display/display.css', (req, res) => {
     res.sendFile(path.join(__dirname,'../display/display.css'));
 });
 app.get('/display/:id', function (req, res) {
-    let room = api.getRoomJSON(req.params.id)
+    let room = api.getRoom({id: req.params.id})
     let color = "#ffffff"
     if(room.count > room.yellow_max)color =  "#ffcdcd"
     else if(room.count > room.green_max)color = "#fcffcd"

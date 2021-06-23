@@ -1,0 +1,30 @@
+<input id="input" placeholder="教室IDを入力">
+<button id="enter">入場</button>
+<button id="exit">退場</button>
+<script>
+window.addEventListener('load', () => {
+	let input = document.getElementById("input")
+	document.getElementById("exit").onclick = ()=>{
+		let id = input.value
+        post({ type: "update-room", id: id, value: -1 });
+	}
+	document.getElementById("enter").onclick = ()=>{
+		let id = input.value
+        post({ type: "update-room", id: id, value: 1 });
+	}
+})
+async function post(data) {
+	const url = "http://localhost:3000/api";
+	console.log(data)
+  //const url = "https://anti-crowded.com/api";
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  };
+  const res = await fetch(url, options);
+  console.log(await res.text());
+}
+</script>
