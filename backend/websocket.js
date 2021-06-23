@@ -5,13 +5,6 @@ const status_change = (data) => {
 }
 const init = (app, http) => {
     io = require('socket.io')(http);
-
-    /*
-    app.get('/', function (req, res) {
-        res.sendFile(path.join(__dirname,'/../homepage/index.html'));
-    });
-    */
-
     io.on('connection', function (socket) {
         socket.on('message', function (msg) {
             console.log('message: ' + msg);

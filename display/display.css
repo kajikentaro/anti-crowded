@@ -31,3 +31,10 @@ h1{
     padding-left: 400px;
     font-size: 50px;
 }
+.test{
+float:right;
+width:500px;
+height:400px;
+margin-right: 300px;
+margin-top: 50px;
+}
