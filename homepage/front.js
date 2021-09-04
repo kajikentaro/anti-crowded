@@ -7,8 +7,10 @@ const change_color = (id, color_code) => {
     poly.setAttribute("fill", color_code);
 }
 const post = async data =>{
-    //const url = "https://anti-crowded.com/api";
-    const url = "http://localhost:3000/api"
+    //const url = "https://anti-crowded.com/api"
+    const domain = document.domain
+    const protocol = location.protocol
+    const url = `${protocol}//${domain}/api`
     const options = {
         method: "POST",
         headers: {
