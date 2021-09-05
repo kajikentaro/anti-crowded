@@ -8,7 +8,7 @@ const change_color = (id, color_code) => {
 }
 const post = async data =>{
     //const url = "https://anti-crowded.com/api"
-    const domain = document.domain
+    const domain = document.location.host
     const protocol = location.protocol
     const url = `${protocol}//${domain}/api`
     const options = {
