@@ -45,7 +45,10 @@ const init_crowded = async ()=>{
     }
 }
 const init_websocket = ()=>{
-    var socketio = io();
+    const domain = document.location.host
+    const protocol = location.protocol
+    const url = `${protocol}//${domain}`
+    var socketio = io(url, {transports:['polling']});
     socketio.emit('add:client', {});
     socketio.on('message', function (msg) {
         let data = msg

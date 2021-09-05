@@ -11,7 +11,10 @@
       <input id="input_msg" autocomplete="off" /><button>Send</button>
     </form>
   <script>
-      var socketio = io();
+      const domain = document.domain
+      const protocol = location.protocol
+      const url = `${protocol}//${domain}`
+      var socketio = io(url, {transports:['polling']});
       $(function(){
           $('#message_form').submit(function(){
             socketio.emit('message', $('#input_msg').val());

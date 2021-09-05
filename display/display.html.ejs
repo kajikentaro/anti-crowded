@@ -33,7 +33,10 @@
 
 </html>
 <script>
-let socketio = io();
+const domain = document.domain
+const protocol = location.protocol
+const url = `${protocol}//${domain}`
+var socketio = io(url, {transports:['polling']});
 let canvas = document.getElementById('canvas');
 let people = document.getElementById('people');
 socketio.on('message', function (msg) {
