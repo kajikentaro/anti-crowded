@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:16-alpine
 
 # アプリケーションディレクトリを作成する
 WORKDIR /usr/src/app
@@ -16,4 +16,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
-CMD [ "node", "main.js" ]
+CMD [ "node", "backend/main.js" ]

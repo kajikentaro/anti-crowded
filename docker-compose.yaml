@@ -1,0 +1,11 @@
+version: '3.2'
+
+services:
+  main:
+    build:
+      context: .
+    container_name: anti-crowded
+    ports:
+      - 3002:3000
+    logging: 
+      driver: none
